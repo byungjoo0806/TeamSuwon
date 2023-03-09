@@ -2,23 +2,23 @@
     position: relative;
     height: max-content;
     width: 100%;
-    background-color: black;
     box-sizing: border-box;
     
 }
 
 .fix1{
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
     height: 45px;
-    padding-left: 12px;
-    padding-right: 10px;
-    border: 1px solid;
+    padding-left: 10px;
+    padding-right: 12px;
     background-color: white;
     box-sizing: border-box;
     align-items: center;
-    position: fixed;
+    margin-top: -9px;
+    
 }
 
 .fix1 div button{
@@ -30,19 +30,76 @@
 
 .button1{
     width: 278px;
-    height: 45px;
     text-align: center;
-   
+    align-items: center;
+       
 }
 
 .button1 button{
+    display: flex;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 240px;
-    height: 24px;
+
+}
+
+
+.button2 button{
+    position: fixed;
+    right: 50px;
+    top: 8px;
+    align-items: center;
+    width: 64px;
+    height: 28px;
+    border: none;
+
+}
+
+.button3 button{
+    width: 44px;
+    height: 28px;
+
+}
+
+.button1 button:hover{
+    background: rgba(55, 53, 47, 0.08);
+}
+
+.button2 button:hover{
+    background: rgba(55, 53, 47, 0.08);
+
+} 
+
+.button3 button:hover{
+    background: rgba(55, 53, 47, 0.08);
     
 }
 
+
+#icon5{
+    display: block;    
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background : url(https://cdn.lazyrockets.com/_next/static/images/emoji-cd0caf391218ef7e695cd8315d235038.png);
+    background-position-x:  8.47457627118644%;
+    background-position-y : 33.89830508474576%;
+    background-size: 6000% 6000%;
+   
+}
+
+#icon6{
+    display: block;
+    position: fixed;
+    right: 88px;
+    top: 17px;
+    content: "";
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-search-input.png);
+    width: 20px;
+    height: 20px;
+    background-size: 12px;
+    background-repeat: no-repeat;
+   
+}
 
 .main{
     max-width: 900px;
@@ -60,6 +117,7 @@
     width: 100%;
     height: 312px;
     font-size: 40px;
+
 }
 
 .tap span{
@@ -76,7 +134,7 @@
 
 .tap1{
     max-width: 100%;
-    height: 6840.1px;
+    height: max-content;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -87,7 +145,6 @@
     font-size: 16px;
     line-height: 1.5;
     box-sizing: border-box ;
-    border: 1px solid;
 }
 
 .icon1{
@@ -103,6 +160,8 @@
     
 }
 
+
+
 h2{
     background-color: rgba(224, 164, 73, 0.3);
     width: 100%;
@@ -114,7 +173,7 @@ h2{
 }
 
 h3{
-    background-color: rgba(197, 152, 74, 0.3);
+    background-color: antiquewhite;
     max-width: 100%;
     width: 100%;
     padding: 3px 2px;
@@ -388,14 +447,14 @@ p{
 .content-div{
     display: flex;
     width: 100%;
-    position: relative;
     white-space: nowrap;
     margin-top: 50px;
     flex-wrap: wrap;
    
 }
 
-.content{
+.content {
+    flex: 0 0 1;
     overflow: hidden;
     text-overflow: ellipsis;
     font-weight: 500;
@@ -421,6 +480,7 @@ p{
 }
 
 .content #icon4{
+    display: block;
     width: 22px;
     height: 22px;
     line-height: 1em;
@@ -429,7 +489,7 @@ p{
     background-position-x: 8.47457627118644%;
     background-position-y: 33.89830508474576%;
     background-size: 6000% 6000%;
-    display: inline-block;
+    
     align-items: center;
     justify-content: center;
 
@@ -437,5 +497,61 @@ p{
 
 .content-text{
     border-bottom: 1px solid rgba(55, 53, 47, 0.16);
+
+}
+
+.bottom-page{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10vh;
+    margin-bottom: 30px;
+    justify-content: flex-end;
+}
+
+#b1{
+    text-align: end;
+    background-color: white;
+    color: inherit;
+    font-size: 12px;
+    letter-spacing: -.33px;
+    white-space: pre-wrap;
+}
+
+#oopy{
+    width: 24px;
+    height: 18px;
+    background-size: cover;
+}
+
+.fix-bottom{
+    position: relative;
+    width: 100%;
+    width: max-content;
+}
+
+.fix-bottom a{
+    position: fixed;
+    width: 88%;
+    height: 48px;
+    bottom: 16px;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    display: flex;
+    align-self: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 88%;
+    max-width: var(--content-max-width);
+    height: 48px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(5, 99, 140);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
 
 }
